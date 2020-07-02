@@ -11,8 +11,12 @@ class UserItem extends React.Component {
   render() {
     return (
       <div>
-        <h1></h1>
-        <h3></h3>
+        <h1>
+        {this.props.name}
+        </h1>
+        <h3>
+        {this.props.email}
+        </h3>
       </div>
     );
   }
