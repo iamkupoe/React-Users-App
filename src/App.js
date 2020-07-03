@@ -35,7 +35,9 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* Form to add new user */}
+        
         <div>
+        <h2 style={{textAlign:'center', backgroundColor:'red', color:'white'}}>Users Form</h2>
           <form onSubmit={this.handleSubmit} style={{marginTop:'15px', backgroundColor:'#a3ffb6', width:'400px', height:'100vh',marginLeft:'0',paddingLeft:'100px', paddingTop:'100px'}}>
             <input type="text" placeholder="Name" value={this.state.name}
             onChange={this.handleNameChange}
@@ -51,7 +53,7 @@ class App extends React.Component {
 
         {/* List of users */}
         <div>
-          <h3 style={{width:'800px', backgroundColor:'lightblue', textAlign:'center', color:'red', height:'30px'}}>List of Users</h3>
+          <h2 style={{width:'800px', backgroundColor:'lightblue', textAlign:'center', color:'red', height:'30px'}}>List of Users</h2>
           {
             this.state.users.map( 
               (user, i) => 
