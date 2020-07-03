@@ -38,7 +38,7 @@ class App extends React.Component {
         
         <div>
         <h2 style={{textAlign:'center', backgroundColor:'red', color:'white'}}>Users Form</h2>
-          <form onSubmit={this.handleSubmit} style={{marginTop:'15px', backgroundColor:'#a3ffb6', width:'400px', height:'100vh',marginLeft:'0',paddingLeft:'100px', paddingTop:'100px'}}>
+          <form onSubmit={this.handleSubmit} style={{marginTop:'15px', backgroundColor:'#a3ffb6', width:'400px', height:'100vh',marginLeft:'0',paddingLeft:'100px', paddingTop:'100px', fontSize:'15px'}}>
             <input type="text" placeholder="Name" value={this.state.name}
             onChange={this.handleNameChange}
               style={{width:'300px', height:'30px',borderRadius:'4px' }}/>
@@ -47,7 +47,7 @@ class App extends React.Component {
             onChange={this.handleEmailChange}
             style={{width:'300px',height:'30px',borderRadius:'4px' }} />
             <br /><br/>
-            <input type="submit" style={{width:'120px', color:'white', borderRadius:'5px', marginLeft:'80px', height:'30px', backgroundColor:'#87c6ff', fontSize:'18px'}} />
+            <input type="SUBMIT" style={{width:'120px', color:'white', borderRadius:'5px', marginLeft:'80px', height:'30px', backgroundColor:'#87c6ff', fontSize:'18px'}} />
           </form>
         </div>
 
